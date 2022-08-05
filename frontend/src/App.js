@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import NavBar from "./NavBar";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/logout" element={<h1>Logout Component</h1>} />
           <Route path="/profile" element={<h1>Profile Component</h1>} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
